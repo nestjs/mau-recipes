@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/http-gateway/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/http-gateway/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/http-gateway",
+  "projects": {
+    "http-gateway": {
+      "type": "application",
+      "root": "apps/http-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/http-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/http-gateway/tsconfig.app.json"
+      }
+    },
+    "private-http": {
+      "type": "application",
+      "root": "apps/private-http",
+      "entryFile": "main",
+      "sourceRoot": "apps/private-http/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/private-http/tsconfig.app.json"
+      }
+    },
+    "redis-service": {
+      "type": "application",
+      "root": "apps/redis-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/redis-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/redis-service/tsconfig.app.json"
+      }
+    },
+    "rmq-service": {
+      "type": "application",
+      "root": "apps/rmq-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/rmq-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/rmq-service/tsconfig.app.json"
+      }
+    },
+    "nats-service": {
+      "type": "application",
+      "root": "apps/nats-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/nats-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nats-service/tsconfig.app.json"
+      }
+    },
+    "tcp-service": {
+      "type": "application",
+      "root": "apps/tcp-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/tcp-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/tcp-service/tsconfig.app.json"
+      }
+    }
+  }
+}
