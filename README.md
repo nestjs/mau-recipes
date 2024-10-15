@@ -28,14 +28,14 @@ Recipes for [Mau](https://mau.nestjs.com).
 
 ## Table of contents
 
-- [1. HTTP](/01-http/)
-- [2. Microservices (monorepo)](/02-microservices/)
-- [3. Kafka example](/03-kafka/)
-- [4. gRPC example](/04-grpc/)
-- [5. Databases](/05-databases/)
-- [6. CRON job (scheduled task)](/06-cron/)
-- [7. Lambda function](/07-lambda/)
-- 8. Websockets (coming soon)
+1. [HTTP](/01-http/)
+2. [Microservices (monorepo)](/02-microservices/)
+3. [Kafka example](/03-kafka/)
+4. [gRPC example](/04-grpc/)
+5. [Databases](/05-databases/)
+6. [CRON job (scheduled task)](/06-cron/)
+7. [Lambda function](/07-lambda/)
+8. Websockets (coming soon)
 
 ## Resources
 
