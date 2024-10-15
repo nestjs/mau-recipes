@@ -22,6 +22,10 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Description
+
+Recipes for [Mau](https://mau.nestjs.com).
+
 ## Table of contents
 
 - [1. HTTP](/01-http/)
@@ -31,6 +35,7 @@
 - [5. Databases](/05-databases/)
 - [6. CRON job (scheduled task)](/06-cron/)
 - [7. Lambda function](/07-lambda/)
+- 8. Websockets (coming soon)
 
 ## Resources
 
