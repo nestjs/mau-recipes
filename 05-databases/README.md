@@ -50,7 +50,7 @@ $ mau deploy
 ```bash
 DB_HOST=
 DB_PORT= # 3306 for MySQL, 5432 for PostgreSQL
-DB_USERNAME=
+DB_USER=
 DB_PASSWORD=
 DB_NAME=
 
