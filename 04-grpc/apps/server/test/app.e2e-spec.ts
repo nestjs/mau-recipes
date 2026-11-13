@@ -1,24 +1,22 @@
-import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import * as request from 'supertest';
-import { ServerModule } from '../src/heroes.module';
+import { HeroesController } from '../src/heroes.controller';
+import { HeroesModule } from '../src/heroes.module';
 
-describe('ServerController (e2e)', () => {
-  let app: INestApplication;
+describe('HeroesController (e2e)', () => {
+  let heroesController: HeroesController;
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [ServerModule],
+      imports: [HeroesModule],
     }).compile();
 
-    app = moduleFixture.createNestApplication();
-    await app.init();
+    heroesController = moduleFixture.get<HeroesController>(HeroesController);
   });
 
-  it('/ (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
+  it('findOne', () => {
+    expect(heroesController.findOne({ id: 1 })).toEqual({
+      id: 1,
+      name: 'John',
+    });
   });
 });
